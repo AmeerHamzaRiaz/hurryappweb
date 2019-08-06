@@ -10,22 +10,34 @@ $('.navbar-nav .nav-link').click(function(){
   $(this).addClass('active');
 })
 
-// $(window).scroll(function() {
-//   var scrollDistance = $(window).scrollTop();
-//   // console.log(scrollDistance);
-//   // Show/hide menu on scroll
-//   // if (scrollDistance >= 200) {
-//   // 		$('nav').fadeIn("fast");
-//   // } else {
-//   // 		$('nav').fadeOut("fast");
-//   // }
+$('#demo-step-1').on({
+  'click': function(){
+      $('#demo-mobile').attr('src','src/images/howitworks-step-1@2x.png');
+      $("#demo-steps-parent-div>div.demo-steps-div-active").removeClass("demo-steps-div-active");
+      $(this).addClass('demo-steps-div-active');
+  }
+});
 
-//   // Assign active class to nav links while scolling
-//   $('.page-section').each(function(i) {
-//     console.log(i);
-//       if ($(this).position().top <= scrollDistance) {
-//           $('.navbar-nav .nav-link').removeClass('active');
-//           $('.navbar-nav .nav-link').eq(i).addClass('active');
-//       }
-//   });
-// }).scroll();
+$('#demo-step-2').on({
+  'click': function(){
+      $('#demo-mobile').attr('src','src/images/howitworks-step-2@2x.png');
+      $("#demo-steps-parent-div>div.demo-steps-div-active").removeClass("demo-steps-div-active");
+      $(this).addClass('demo-steps-div-active');
+  }
+});
+
+$('#demo-step-3').on({
+  'click': function(){
+      $('#demo-mobile').attr('src','src/images/howitworks-step-3@2x.png');
+      $("#demo-steps-parent-div>div.demo-steps-div-active").removeClass("demo-steps-div-active");
+      $(this).addClass('demo-steps-div-active');
+  }
+});
+
+$('#demo-step-4').on({
+  'click': function(){
+      $('#demo-mobile').attr('src','src/images/howitworks-step-4@2x.png');
+      $("#demo-steps-parent-div>div.demo-steps-div-active").removeClass("demo-steps-div-active");
+      $(this).addClass('demo-steps-div-active');
+  }
+});

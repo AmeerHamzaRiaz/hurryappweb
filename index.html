@@ -104,7 +104,7 @@
           </br>
               <h1 class="jumbotron-heading">Get your work done by</h1>
               <h1 class="jumbotron-heading">HurryApp</h1>
-              <div style="display: inline-block">
+              <div class="jumbotron-subheading">
                 <span class="jumbotron-p">
                   Learn more
                 </span>
@@ -118,7 +118,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col mobile-div">
               <img
                 class="jumbotron-mobile"
                 src="./src/images/header-phone@2x.png"
@@ -129,13 +129,19 @@
         </div>
       </div>
       <div class="wave-svg-div">
-        <img class="wave-svg" src="./src/images/header-wave.svg" />
+          <svg width="100%" viewBox="0 0 1440 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="header-wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M1440,54.9385499 L1440,185 L0,185 L0,72.5454698 C57.998439,67.7335216 137.866137,50.4442497 322,24.9636281 C734,-32.0493294 798,81.9765856 1157,81.9765856 C1273.54375,81.9765856 1367.87708,72.963907 1440,54.9385499 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M1455,615 C1403,691 1257.33333,729 1018,729 C659,729 595,615 183,672 C-229,729 -119,745 -410,672 C-410,230 -410,9 -410,9 L1441,9 L1455,615 Z" id="Path-3-Copy" fill="#FFFFFF" fill-rule="nonzero" opacity="0.0873883929" transform="translate(522.500000, 369.000000) scale(1, -1) translate(-522.500000, -369.000000) "></path>
+            </g>
+        </svg>
+        <!-- <img class="wave-svg" src="./src/images/header-wave (2).svg" /> -->
       </div>
     </div>
     <!-- gradient-bg end -->
 
     <!--Features-->
-    <div id="Features" class="container text-center page-section">
+    <div id="Features" class="container text-center">
       <h1 class="section-heading">Features</h1>
       <p class="section-p">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -203,37 +209,84 @@
       </div>
     </div>
 
-    <!--Get App Now-->
-    <div id="GetAppNow" class="jumbotron jumbotron-fluid try-app page-section">
+    <!-- How App Works -->
+    <div id="Features" class="container text-center gutter">
+      <h1 class="section-heading">How the App Works?</h1>
+      <p class="section-p">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col demo-mobile-div">
+            <img id="demo-mobile" src="src/images/howitworks-step-1@2x.png" alt="appdemo-1">
+          </div>
+          
+          <div id="demo-steps-parent-div" class="col">
+            <div id="demo-step-1" class="demo-steps-div">
+              <h4 class="demo-heading">1. Choose a service</h4>
+              <p class="demo-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              </p>
+            </div>
+            
+            <div id="demo-step-2" class="demo-steps-div">
+              <h4 class="demo-heading">2. Select a sub-task</h4>
+              <p class="demo-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              </p>
+            </div>
+            
+            <div id="demo-step-3" class="demo-steps-div">
+                <h4 class="demo-heading">3. Find the suitable technicians</h4>
+                <p class="demo-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+            </div>
+            
+            <div id="demo-step-4" class="demo-steps-div">
+                <h4 class="demo-heading">4. Wait for the technician to arrive</h4>
+                <p class="demo-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+               </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--Get App Now-->
+    <div id="GetAppNow" class="container-fluid try-app">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
             <img
-              width="218px"
-              height="472px"
-              src="./src/images/try-iphone@2x.png"
+              class="phone-cropped mx-auto d-block"
+              src="./src/images/try-iphone-cropped.png"
             />
           </div>
-          <div class="col">
-            <h1 class="jumbotron-heading">Try HurryApp Right now</h1>
+          <div class="col-lg-8 col-sm-12 my-auto">
+            <h1 id="try-heading" class="jumbotron-heading">Try HurryApp Right now</h1>
             <p class="jumbotron-p">
               Stuck with something and you need instant feedback get hurryapp on
               your mobile at all times & get your work done
             </p>
+            <div class="store-btn-div">
             <img
-              width="200"
-              height="60"
+              class="store-btn"
               src="./src/images/try-playstore@2x.png"
-              style="margin-right: 22px"
+              class="image-fluid"
             />
-            <img width="200" height="60" src="./src/images/try-istore@2x.png" />
+            <img class="store-btn" src="./src/images/try-istore@2x.png"/>
+          </div>
           </div>
         </div>
       </div>
     </div>
 
     <!--Contact Now-->
-    <div id="Contact" class="container page-section">
+    <div id="Contact" class="container gutter">
       <div class="row">
         <div class="col contact-img justify-content-center align-items-center">
           <img src="src/images/contact-illustration.png" />
